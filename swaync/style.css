@@ -1,0 +1,209 @@
+/* Catppuccin Mocha Theme for SwayNC */
+
+/* Define Catppuccin Mocha colors */
+@define-color base #1e1e2e;
+@define-color mantle #181825;
+@define-color crust #11111b;
+@define-color text #cdd6f4;
+@define-color subtext0 #a6adc8;
+@define-color subtext1 #bac2de;
+@define-color surface0 #313244;
+@define-color surface1 #45475a;
+@define-color surface2 #585b70;
+@define-color overlay0 #6c7086;
+@define-color overlay1 #7f849c;
+@define-color overlay2 #9399b2;
+@define-color blue #89b4fa;
+@define-color lavender #b4befe;
+@define-color sapphire #74c7ec;
+@define-color sky #89dceb;
+@define-color teal #94e2d5;
+@define-color green #a6e3a1;
+@define-color yellow #f9e2af;
+@define-color peach #fab387;
+@define-color maroon #eba0ac;
+@define-color red #f38ba8;
+@define-color mauve #cba6f7;
+@define-color pink #f5c2e7;
+@define-color flamingo #f2cdcd;
+@define-color rosewater #f5e0dc;
+
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 14px;
+  transition: 200ms;
+}
+
+/* Control Center */
+.control-center {
+  background: alpha(@base, 0.9);
+  border: 2px solid @surface0;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.control-center-list-placeholder {
+  opacity: 0.5;
+}
+
+/* Widgets */
+.widget-title {
+  color: @text;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 8px;
+}
+
+.widget-title > button {
+  background: @surface0;
+  border-radius: 8px;
+  color: @text;
+  padding: 4px 12px;
+}
+
+.widget-title > button:hover {
+  background: @surface1;
+  color: @mauve;
+}
+
+.widget-dnd {
+  background: @surface0;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+}
+
+.widget-dnd > switch {
+  background: @surface1;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.widget-dnd > switch:checked {
+  background: @mauve;
+}
+
+.widget-dnd > switch slider {
+  background: @text;
+  border-radius: 50%;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+.widget-inhibitors {
+  background: @surface0;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+}
+
+/* Notifications */
+.notification-row {
+  outline: none;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+  background: @surface0;
+  border-radius: 12px;
+}
+
+.notification {
+  background: alpha(@base, 0.95);
+  border: 1px solid @surface0;
+  border-radius: 12px;
+  margin: 6px 8px;
+  padding: 0;
+}
+
+.notification-content {
+  padding: 10px;
+}
+
+.close-button {
+  background: @surface0;
+  border-radius: 50%;
+  color: @text;
+  margin: 8px;
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.close-button:hover {
+  background: @red;
+  color: @base;
+}
+
+.notification-default-action,
+.notification-action {
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  background: @surface1;
+}
+
+.notification-action {
+  background: @surface0;
+  border: 1px solid @surface1;
+  color: @text;
+  margin: 4px;
+}
+
+.notification-action:hover {
+  background: @mauve;
+  color: @base;
+}
+
+.image {
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.summary {
+  color: @text;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.time {
+  color: @subtext0;
+  font-size: 0.8em;
+}
+
+.body {
+  color: @subtext1;
+  font-size: 0.9em;
+}
+
+.app-name {
+  color: @mauve;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+/* Critical Notifications */
+.critical {
+  border: 2px solid @red;
+}
+
+/* Low Priority */
+.low {
+  border: 1px solid @surface1;
+}
+
+/* Floating Notifications */
+.floating-notifications {
+  background: transparent;
+}
+
+.blank-window {
+  background: transparent;
+}
