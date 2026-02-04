@@ -54,37 +54,33 @@ tooltip label {
 /* ── Center modules ─────────────────────────────────────── */
 
 #workspaces {
-    background: @surface0;
-    border-radius: 8px;
+    background: transparent;
     margin: 5px 0;
-    padding: 0 4px;
+    padding: 0;
 }
 
 #workspaces button {
-    color: @subtext0;
-    padding: 0 8px;
-    margin: 4px 2px;
-    border-radius: 6px;
+    color: @overlay0;
+    padding: 0;
+    margin: 0 1px;
+    border-radius: 50%;
+    font-size: 32px;
+    min-width: 32px;
+    min-height: 32px;
     transition: all 0.2s ease;
 }
 
-#workspaces button:hover {
-    background: @surface1;
-    color: @text;
+#workspaces button.active {
+    color: @mauve;
+    text-shadow: 0 0 6px @mauve;
 }
 
-#workspaces button.active {
-    background: @mauve;
-    color: @base;
+#workspaces button:hover {
+    color: @blue;
 }
 
 #workspaces button.urgent {
-    background: @red;
-    color: @base;
-}
-
-#workspaces button.empty {
-    color: @overlay0;
+    color: @red;
 }
 
 /* ── Right modules ──────────────────────────────────────── */
